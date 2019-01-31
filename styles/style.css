@@ -1,0 +1,406 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.topnav {
+    width: 100%;
+    background: #282828;
+    padding: 20px 0px;
+    position: fixed;
+}
+.topnav ul {
+    display: flex;
+    background: #282828;
+    width: 100%;
+}
+.topnav ul .link {
+    list-style-type: none;
+}
+.topnav ul .link a {
+    text-decoration: none;
+    color: #fff;
+    background: #282828;
+    padding: 20px 20px;
+    width: 100%;
+}
+.topnav ul .link a:hover {
+    background: grey;
+}
+.topnav ul .dropdown {
+    list-style-type: none;
+}
+.topnav ul .dropdown a {
+    text-decoration: none;
+    color: #fff;
+    background: #282828;
+    padding: 20px 20px;
+    width: 100%;
+}
+.topnav ul .dropdown a:hover {
+    background: grey;
+}
+
+.topnav ul .dropdown .dropm{
+    position: absolute;
+    margin-top: 19px;
+    width: 120px;
+    display: none;
+}
+.topnav ul .dropdown:hover .dropm{
+    display: block;
+}
+    .topnav ul .dropdown .dropm a {
+    display: block;
+    color: #282828;
+    background: rgb(255, 255, 255);
+}
+.topnav ul .dropdown .dropm a:hover {
+    background: grey;
+}
+
+.topnav ul .search {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    color: #fff;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.load {
+    animation: slide 2s;
+}
+.slider {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    animation:slide 40s infinite;
+}
+.content {
+    color: #fff;
+    width: 100%;
+    height: 100%;
+}
+.des {
+    text-align: center;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+
+}
+
+
+@keyframes slide {
+    0% {
+        background-image: url('../img/chicago.jpg');
+    }
+
+    20% {
+        background-image: url('../img/chicago.jpg');
+    }
+    20.01% {
+        background-image: url('../img/chicago.jpg');
+    }
+    40%{
+        background-image: url('../img/losangeles.jpg');
+    }
+    40.01% {
+        background-image: url('../img/newyork.jpg');
+    }
+    100% {
+        background-image: url('../img/newyork.jpg');
+    }
+}
+
+
+
+    .main {
+        max-width: 870px;
+        width: 100%;
+        margin: 0 auto;
+        height: 100vh;
+        background: #fff;
+        margin-top: 120px;
+    }
+    .main h1{
+        text-align: center;
+        letter-spacing: 6px;
+    }
+    .main h4 {
+        text-align: center;
+        font-size: 20px;
+        color: gray;
+        margin-top: 20px;
+    }
+    .main p {
+        margin-top: 20px;
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .main .cards {
+        display: flex;
+        padding: 50px 50px;
+        text-align: center;
+        margin-left: -50px;
+        width: 100%;
+    }
+    .main .cards .card{
+        padding: 50px;
+        
+    }
+    .main .cards img {
+        margin-top: 10px;
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+    }
+
+
+
+
+
+    .tour {
+        width: 100%;
+        height: 160vh;
+        background: #282828;
+    }
+    .tour .top {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .tour .title {
+        text-align: center;
+        padding: 100px 0px;
+    }
+    .tour .title h1 {
+        color: #fff;
+        letter-spacing: 4px;
+    }
+    .tour .title h4 {
+        margin-top: 15px;
+        color: gray;
+    }
+
+    .tour .table {
+        background: #fff;
+        width: 100%;
+        height: 150px;
+        color: gray;
+    }
+
+    .table .sep {
+        display: flex;
+        border-bottom: 1px solid grey;
+    }
+    .table .sep h2 {
+        padding: 10px;
+    }
+
+    .table .oct {
+        display: flex;
+        border-bottom: 1px solid grey;
+    }
+    .table .oct h2 {
+        padding: 10px;
+    } 
+     .table .nov h2 {
+        padding: 10px;
+        float: left;
+    }
+    .table .nov h3 {
+        float: right;
+        background: #282828;
+        padding: 10px;
+        border-radius: 50%;
+        color: #fff;
+        margin-top: 5px;
+        margin-right: 20px;
+    }
+    .table .sold {
+        display: flex;
+        align-items: center;
+        background: rgb(245, 68, 68);
+        height: 10px;
+        margin-top: 10px;
+        font-size: 20px;
+        text-decoration: none;
+        color: #fff;
+        padding: 10px;
+    }
+
+
+
+
+
+
+
+
+    .profilecard {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .profilecard .prof  img {
+        width: 325px;
+        height: 250px;
+    }
+    .profilecard .prof  img:hover {
+        filter: brightness(60%);
+    }
+    .profilecard .prof {
+        max-width: 325px;
+        height: 175px;
+        background: #fff;
+        height: 100%;
+    }
+    .profilecard .prof .padd { 
+        margin: 20px 20px;
+    }
+    .profilecard .prof .date {
+        margin-top: 20px;
+        color: gray;
+    }
+    .profilecard .prof .pres {
+        margin-top: 20px;
+        color: #4e4e4e;
+    }
+    .profilecard .prof button {
+        border: 0;
+        margin-top: 10px;
+        background: #282828;
+        padding: 15px 25px;
+        color: #fff;
+        text-decoration: none;
+    }
+    .profilecard .prof button:hover {
+        background: gray;
+        color: #282828;
+    }
+
+
+
+
+
+
+
+
+    .contact {
+        width: 100%;
+        height: 1vh;
+        margin-top: 150px;
+    }
+    .contact .top {
+        max-width:1000px;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+    .contact .title {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .contact .title h1 {
+        letter-spacing: 5px;
+    }
+    .contact .title h3 {
+        margin-top: 15px;
+        color: gray;
+    }
+
+    .contact .addres {
+        font-size: 23px;
+        padding: 10px;
+        width: 300px;
+    }
+    .contact .addres i {
+        padding: 5px;
+    }
+    .input input {
+        padding: 15px;
+    }
+    .contact .wrapper {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: -100px;
+    }
+    .contact .wrapper .input {
+        display: flex;
+        width: 500px;
+    }
+    .contact .wrapper .input .msg {
+        margin-top: 5px;
+        width: 376px;
+    }
+    .contact .wrapper .input .send {
+        border: 0;
+        background: #282828;
+        color: #fff;
+    }
+
+
+
+
+
+    .background {
+        width: 100%;
+        height: 100vh;
+        background-image: url('../img/back.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: 100px;
+    }
+
+    .footer {
+        width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 40px;
+        color: grey;
+        margin-top: 50px;
+    }
+    .footer h3 {
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+    .footer h3 a {
+        color: grey;
+
+    }
+
+
+
+
+
+    @media only screen and (max-width: 600px) {
+        .main .cards {
+
+            flex-wrap: wrap;
+        }
+        .profilecard {
+            flex-wrap: wrap;
+        }
+        .footer {
+            width: 250px;
+
+        }
+        .topnav ul {
+
+            width: 100%;
+        }
+      }
